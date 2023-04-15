@@ -1,10 +1,10 @@
-import { Input } from './components/Input'
+import {TodoForm} from './components/TodoForm'
 
 function App() {
 	return (
 		<div>
       <h1>TodoList w/ Typescript, React & Tailwindcss</h1>
-      <Input />
+      <TodoForm />
 		</div>
 	)
 }
