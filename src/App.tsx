@@ -1,11 +1,11 @@
 import { TaskProvider } from './context/taskContext'
-import {TodoForm} from './components/TodoForm'
+import Panel from './components/Panel'
 
 function App() {
 	return (
 		<TaskProvider>
       <h1>TodoList w/ Typescript, React & Tailwindcss</h1>
-      <TodoForm />
+      <Panel />
 		</TaskProvider>
 	)
 }

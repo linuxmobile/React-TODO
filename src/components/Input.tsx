@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 type InputProps = {
 	id: string
 	name: string
@@ -7,7 +9,7 @@ type InputProps = {
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-export const Input = (props: InputProps) => {
+export default function Input (props: InputProps) {
 	const { id, name, placeholder, type = 'text', value, onChange } = props
 	return (
 		<input
