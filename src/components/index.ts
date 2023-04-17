@@ -1,4 +1,4 @@
-export { default as Button } from './Button.tsx'
+export { default as Button } from './Button'
 export { default as Checkbox } from './Checkbox'
 export { default as CheckboxField } from './CheckboxField'
 export { default as DeleteIcon } from './DeleteIcon'
