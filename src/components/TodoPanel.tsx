@@ -18,12 +18,12 @@ export default function TodoPanel() {
 
 	return (
 		<div className='grid content-end gap-4 auto-rows-min'>
-			<h1 className='text-2xl font-bold'>Todo App With React & typescript</h1>
+			<h1 className='text-2xl font-bold text-gray-200'>Todo App With React & typescript</h1>
 			<motion.div
 				layout
 				className={`${
 					todo.tasks.length || todo.status ? 'py-7' : 'py-0'
-				} px-5 bg-white rounded-lg shadow-md max-h-80`}
+				} px-5 bg-slate-800 rounded-lg shadow-md max-h-80 ring-slate-700 ring-2`}
 			>
 				<Stack aria-label='todo tasks'>
 					{todo.tasks.map((task) => (

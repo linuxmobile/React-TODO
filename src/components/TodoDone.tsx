@@ -30,7 +30,7 @@ export default function PanelDone() {
 				layout
 				className={`${
 					done.tasks.length || done.status ? 'py-7' : 'py-0'
-				} px-5 bg-white rounded-lg shadow-md max-h-80`}
+				} px-5 bg-slate-800 ring-2 ring-slate-600 rounded-lg shadow-md max-h-80`}
 			>
 				<Stack aria-label='done tasks'>
 					{done.tasks.map((task) => (

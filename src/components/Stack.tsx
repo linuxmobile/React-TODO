@@ -16,7 +16,7 @@ export default function Stack(props: StackProps) {
 			}`}
 		>
 			<motion.ul
-				className='grid divide-y divide-gray-200'
+				className='grid divide-y divide-gray-700'
 				aria-label={ariaLabel}
 				variants={{
 					show: {

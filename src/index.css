@@ -4,9 +4,9 @@
 
 body {
   @apply bg-gradient-to-tr;
-  @apply from-purple-200;
-  @apply via-gray-200;
-  @apply to-blue-200;
+  @apply from-slate-500;
+  @apply to-slate-800;
+  @apply to-40%;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -30,3 +30,4 @@ body {
   @apply mt-1;
   @apply mb-1;
 }
+

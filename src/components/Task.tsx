@@ -47,7 +47,7 @@ export default function Task(props: TaskProps) {
 				},
 			}}
 			style={{ gridTemplateColumns: 'auto min-content' }}
-			className='group grid items-center w-full gap-2 px-3 py-2.5 bg-white '
+			className='group grid items-center w-full gap-2 px-3 py-2.5 bg-slate-800'
 		>
 			<CheckboxField
 				id={id}
