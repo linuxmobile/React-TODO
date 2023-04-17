@@ -25,6 +25,7 @@ type TaskActions =
 	| { type: 'DONE'; id: string }
 	| { type: 'UNDO'; id: string }
 	| { type: 'DELETE'; id: string }
+  | { type: 'RESET'; id: string }
 	| { type: 'CLEAR' }
 
 const initialState: Task[] = []
@@ -53,6 +54,9 @@ function taskReducer(
 			return state.map((
 				task,
 			) => (task.id === action.id ? { ...task, completed: false } : task))
+
+    case 'RESET':
+      return [] 
 
 		case 'DELETE':
 			return state.filter((task) => task.id !== action.id)

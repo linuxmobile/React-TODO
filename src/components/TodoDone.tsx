@@ -24,6 +24,10 @@ export default function PanelDone() {
 		dispatch({ type: 'CLEAR' })
 	}
 
+  function handleResetTasks() {
+    dispatch({ type: 'RESET' })
+  }
+
 	return (
 		<div className='grid content-end gap-4 auto-rows-min'>
 			<motion.div
@@ -57,7 +61,12 @@ export default function PanelDone() {
 					)}
 				</Stack>
 			</motion.div>
-			<div className='flex justify-end'>
+			<div className='flex justify-end gap-3'>
+        <Button
+          type='button'
+          title='reset tasks'
+          onClick={handleResetTasks}
+        >reset all</Button>
 				<Button
 					type='button'
 					title='clear finish tasks'
