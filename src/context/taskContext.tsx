@@ -25,7 +25,7 @@ type TaskActions =
 	| { type: 'DONE'; id: string }
 	| { type: 'UNDO'; id: string }
 	| { type: 'DELETE'; id: string }
-  | { type: 'RESET'; id: string }
+  | { type: 'RESET' }
 	| { type: 'CLEAR' }
 
 const initialState: Task[] = []
