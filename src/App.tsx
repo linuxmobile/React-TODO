@@ -3,10 +3,12 @@ import Panel from './components/Panel'
 
 function App() {
 	return (
-		<TaskProvider>
-      <h1>TodoList w/ Typescript, React & Tailwindcss</h1>
-      <Panel />
-		</TaskProvider>
+		<main className='grid h-screen place-items-center'>
+			<TaskProvider>
+				<h1>TodoList w/ Typescript, React & Tailwindcss</h1>
+				<Panel />
+			</TaskProvider>
+		</main>
 	)
 }
 

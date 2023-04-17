@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply bg-gray-800 text-white font-sans flex place-content-center w-screen h-screen items-center;
+body {
+  @apply bg-gradient-to-tr;
+  @apply from-purple-200;
+  @apply via-gray-200;
+  @apply to-blue-200;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+::-webkit-scrollbar:vertical {
+  @apply w-1;
+}
+
+::-webkit-scrollbar:horizontal {
+  @apply h-1;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300;
+  @apply rounded-full;
+}
+
+::-webkit-scrollbar-track {
+  @apply mt-1;
+  @apply mb-1;
 }

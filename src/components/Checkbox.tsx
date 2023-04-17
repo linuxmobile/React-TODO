@@ -21,6 +21,7 @@ export default function Checkbox(props: CheckboxProps) {
 			checked={checked}
 			aria-label={ariaLabel}
 			onChange={onChange}
+			className='text-blue-200 transition-all duration-200 border-gray-500 rounded outline-none cursor-pointer hover:border-gray-300 border-1 focus:ring-offset-1 focus:outline-none hover:text-blue-100 focus:ring focus:ring-blue-200'
 		/>
 	)
 }

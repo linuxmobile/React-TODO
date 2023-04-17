@@ -25,7 +25,10 @@ export default function PanelDone() {
 
 	return (
 		<div className='grid content-end gap-4 auto-rows-min'>
-			<div>
+			<motion.div
+				layout
+				className="{`${done.tasks.length || done.status = 'py-7' : 'py-0'} px-5 bg-white rounded-lg shadow-md max-h-80`}"
+			>
 				<Stack aria-label='done tasks'>
 					{done.tasks.map((task) => (
 						<Task
@@ -50,7 +53,7 @@ export default function PanelDone() {
 						</li>
 					)}
 				</Stack>
-			</div>
+			</motion.div>
 			<div className='flex justify-end'>
 				<Button
 					type='button'
