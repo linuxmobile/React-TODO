@@ -44,7 +44,7 @@ export default function TodoPanel() {
 					))}
 					{todo.tasks.length === 0 && (
 						<li className='text-center'>
-							<Text>{todo.status}</Text>
+							<Text variant='sub'>{todo.status}</Text>
 						</li>
 					)}
 				</Stack>

@@ -18,7 +18,7 @@ type FormProps = {
 	onSubmit: (description: string) => void
 }
 
-export default function TodoForm(props: FormProps) {
+export default function PanelTodoForm(props: FormProps) {
 	const { onSubmit } = props
 	const [input, setInput] = useLocalStorage('another-todo-list:input', '')
 	const [todo] = useTodoTask()

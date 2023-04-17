@@ -1,15 +1,16 @@
 const variants = {
-  sub: 'text-gray-500 text-sm',
-  base: 'text-gray-700 text-base',
-  title: 'text-gray-900 text-lg',
+	sub: 'text-gray-500 text-sm',
+	base: 'text-gray-500 text-base',
+	title: 'text-gray-500 text-xl font-bold',
 } as const
 
 type TextProps = {
-  variant?: keyof typeof variants
-  children: string
+	variant?: keyof typeof variants
+	children: string
 }
 
 export default function Text(props: TextProps) {
-  const { variant = 'base', children } = props
-  return <p className={`${variants[variant]}`}>{children}</p>
+	const { children, variant = 'base' } = props
+
+	return <p className={`${variants[variant]}`}>{children}</p>
 }

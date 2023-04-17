@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { useDoneTask } from '../context/taskContext'
 import {
 	Button,
