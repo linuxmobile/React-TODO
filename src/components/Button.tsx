@@ -6,7 +6,7 @@ type ButtonProps = {
 	title: string
 	children: string
 	disabled?: boolean
-	onClick: (event: React.MouseEvent<HTMLButtonElementm, MouseEvent>) => void
+	onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
 
 export default function Button(props: ButtonProps) {
