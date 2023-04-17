@@ -28,7 +28,9 @@ export default function PanelDone() {
 		<div className='grid content-end gap-4 auto-rows-min'>
 			<motion.div
 				layout
-				className="{`${done.tasks.length || done.status = 'py-7' : 'py-0'} px-5 bg-white rounded-lg shadow-md max-h-80`}"
+				className={`${
+					done.tasks.length || done.status ? 'py-7' : 'py-0'
+				} px-5 bg-white rounded-lg shadow-md max-h-80`}
 			>
 				<Stack aria-label='done tasks'>
 					{done.tasks.map((task) => (

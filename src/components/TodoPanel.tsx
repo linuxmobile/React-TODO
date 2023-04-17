@@ -18,6 +18,7 @@ export default function TodoPanel() {
 
 	return (
 		<div className='grid content-end gap-4 auto-rows-min'>
+      <h1 className='text-2xl font-bold'>Todo App With React & typescript</h1>
 			<motion.div
 				layout
 				className={`${
